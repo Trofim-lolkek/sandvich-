@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		.trash{
+		}
+		.treasure{
+		}
+		.to {
+		}
+		.br {
+		}
+		.me {
+		}
+		.ch {
+		}
+		.location1 {
+			background-image: url('Sandvich.png');
+			height: 953px;
+			background-size: 100% 100%;
+		}
+		.location2 {
+			background-image: url('tropik.jpg');
+			height: 953px;
+			background-size: 100% 100%;
+			background-color: purple;
+		}
+		.location3 {
+			background-image: url('kosmos.jpg');
+			height: 953px;
+			background-size: 100% 100%;
+			display: none;
+		}
+		.task {
+			background-color: #e09304;
+			height: 500px;
+			width: 300px;
+			border: 6px solid; 
+            padding: 15px;
+		}
+		.bread {
+			background-image: url('bread.png');
+			height: 100px;
+			background-size: 100% 100%;
+			position: absolute;
+			left: 1300px;
+			top: 200px;
+			width: 150px;
+		}
+		.tomato {
+			background-image: url('tomato.png');
+			height: 100px;
+			background-size: 100% 100%;
+			position: absolute;
+			left: 1700px;
+			top: 600px;
+			width: 100px;
+		}
+		.meat {
+			background-image: url('meat.png');
+			height: 100px;
+			background-size: 100% 100%;
+			position: absolute;
+			left: 800px;
+			top: 400px;
+			width: 200px;
+		}
+		.chese {
+			background-image: url('cheese.png');
+			height: 100px;
+			background-size: 100% 100%;
+			position: absolute;
+			left: 600px;
+			top: 200px;
+			width: 150px;		
+		}
+		.npc {
+			background-image: url('Deck.png');
+			height: 450px;
+			background-size: 100% 100%;
+			position: absolute;
+			left: 600px;
+			top: 200px;
+			width: 400px;		
+		}
+		.thief {
+			height: 100px;
+			width: 100px;
+			position: absolute;
+		}
+	</style>
+</head>
+<style type="text/css">
+</style>
+<body> 
+	<div>
+		
+	</div>
+	<div class="location1"> 
+
+			<div class="task">
+				<h1>приготовь себе завтрак</h1>
+				<h1>Найди:</h1>
+			<h3 class="to">1. помидор</h3>
+			<h3 class="br">2. хлеб</h3>
+			<h3 class="me">3. мясо</h3>
+			<h3 class="ch">4. сыр</h3>
+			</div>
+			<div class="tomato"></div>
+			<div class="bread"></div>
+			<div class="meat"></div>
+			<div class="chese"></div>
+	</div>
+
+	<div class="location2"> 
+		<div class="col-7 mx-auto" style="">
+			<div style="display: flex;">
+		<div>
+			<h2 class="task">О НЕТ ПРИШЕЛЬЦЫ УКРАЛИ ТВОЙ ОБЕД Найди спрятанное золото до 5000 рублей чтобы купить себе космический корабль</h2>
+			<h1>деньги: <span class="score">0</span></h1>
+		</div>
+		<div style="display: flex;">
+		<div class="npc"></div>
+		</div>
+		   </div>
+		<!-- Дивы с нумерацией 1, 2, 3 и т.д. -->
+		<div class="row">
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>4</h4>
+			</div>
+		</div>
+		<!--Линия А-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>A</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg Light border trash">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border trash">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border trash">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border treasure">
+				
+			</div>
+		</div>
+		<!--Линия B-->
+		<div class="row">
+			<div class="col-1  px-5 py-4 bg-warning text-center border">
+				<h4>B</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border trash">
+
+			</div>
+			<div class="col-1  px-5 py-4 bg border trash">
+			
+			</div>
+			<div class="col-1  px-5 py-4 bg border trash">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border trash">
+				
+			</div>
+		</div>
+		<!--Линия C-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>C</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border trash">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border trash">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border trash">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border trash">
+				
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="location3">
+	<div>
+		<div style="display: flex;">
+		<h1 class=" task">тебе надо их уничтожить чтобы спасти свой обед! 
+		нажми на красненькую кнопочку   
+		ОЧКИ <span class="sum ">0</span></h1>
+		<div style="color: red;"> 
+			<h1>ВРЕМЯ <span class="timer">10</span></h1>
+		</div>
+		</div>
+	    <button class="btn bg-danger">кнопочка</button>
+	</div>
+	</div>
+		<!--Линия D-->
+	<script src="script.js"></script>
+
+</body>
+</html>
